@@ -10,4 +10,5 @@
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
   --main-font-sz: 18px;
+  --title-font-sz: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
