@@ -17,10 +17,24 @@
   block-size: 100vh;
 }
 
+.header__theme-menu-button_active,
+.header__theme-menu-button:hover {
+  border: 1px solid rgb(255, 0, 112, 0.4);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: var(--accent-color) solid 1px;
+}
+
 .header__theme-menu-list {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  gap: 10px;
   margin-block-start: 65px;
 }
 
@@ -49,7 +63,6 @@
   font-weight: 700;
   line-height: 23.4px;
   max-block-size: 117px;
-
   align-self: center;
   justify-self: end;
 }
@@ -61,7 +74,11 @@
 
 .section {
   margin-block-start: 50px;
-} 
+}
+
+.section:first-child {
+  margin-block-start: 0;
+}
 
 .concentrate-title {
   font-size: 18px;
@@ -106,7 +123,7 @@
 }
 
 .concentrate-subtitle {
-  margin-block-start: 20px;
+  /* margin-block-start: 20px; */
   margin-block-end: 9px;
 }
 
@@ -133,6 +150,14 @@
 
 .shadow-text:hover {
   border-bottom: solid 1px currentColor;
+}
+
+.shadow-text:focus {
+  outline: none;
+}
+
+.shadow-text:focus-visible {
+  outline: var(--accent-color) solid 1px;
 }
 
 /*картинки*/
@@ -193,20 +218,21 @@
   margin-block-start: 173px;
 }
 
+.header-text {
+  max-inline-size: 364px;
+  max-block-size: 117px;
+}
+
 .header__theme-menu-list {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
   margin-block-start: 172px;
 }
-.header-text {
-  max-inline-size: 364px;
-  max-block-size: 117px;
-} 
 
 .section:nth-child(odd) {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 314.96px 1fr;
   grid-template-rows: min-content;
   gap: 20px;
 }
@@ -268,6 +294,11 @@
   margin-block-start: 273px;
 }
 
+.header-text {
+  max-block-size: 71px;
+  max-inline-size: 491px;
+}
+
 .header__theme-menu-list {
   display: flex;
   gap: 10px;
@@ -284,12 +315,17 @@
   align-items: start;
 }
 
+/* .section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+
 .decline-concentrate {
   display: grid;
   grid-template-columns: repeat(3, minmax(315px, 1fr));
   grid-template-rows: min-content 1fr; /* заголовок + контент */
   gap: 20px;
-  
 }
 
 .decline-concentrate-title {
@@ -312,6 +348,7 @@
   grid-column: 3;
   grid-row: 2;
 }
+
 }
 
 
