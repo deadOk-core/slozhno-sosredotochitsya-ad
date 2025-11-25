@@ -2,4 +2,191 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: 10px;
+  background-image: var(--bg-image);
+  object-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+.header {
+  color: var(--accent-color);
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu {
+  justify-self: end; /* выравниваем по правому краю в grid */
+  align-self: start;
+  padding-block-start: 65px;
+
+}
+
+.header-text {
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.main {
+  color: var(--main-text-color);
+  margin-block-end: 40px;
+}
+
+.section {
+  margin-block-start: 50px;
+} 
+
+.concentrate-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.rec {
+  /* font-size: var(--main-font-size); */
+  text-transform: uppercase;
+  line-height: 25px;
+  /* color: var(--color-decor); */
+  inset-block-start: clamp(10px, 3vw, 20px);
+  inset-inline-end: clamp(10px, 3vw, 20px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 9px;
+}
+
+.rec::after {
+content: '';
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  margin-inline-start: 10px;
+}
+
+/* 
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+} */
+
+.header__theme-menu-item {
+
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase; /* преобразование в нижний регистр */
+  text-align: center;
+  border: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+  padding-block: 1.5px;
+  padding-inline: 13px; 
+}
+
+.title {
+  /* Для планшета и десктопа */
+ /* clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)  */
+
+ /* Для мобильных */
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.concentrate-subtitle {
+  margin-block-start: 20px;
+  margin-block-end: 9px;
+}
+
+.concentrate-subtitle-item {
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+  font-weight: 400;
+}
+
+.concentrate-paragraph {
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--title-decor-color);
+  font-weight: 700;
+}
+
+.concentrate-title {
+  color: var(--accent-color);
+}
+
+.shadow-text {
+  text-shadow: 1.5px 1.5px 0 var(--accent-color);
+}
+
+.shadow-text:hover {
+  border-bottom: solid 1px currentColor;
+}
+
+/*картинки*/
+
+.pictures .concentrate-title{
+  color: var(--title-decor-color);
+  /* margin-block-end: 10px; */
+}
+
+.pictures-list {
+  margin-block-start: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(6, minmax(142px, 1fr)); 5 элементов */
+}
+
+
+
+.picture-item-link {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.picture {
+  /* object-position: center; */
+  /* object-fit: cover; */
+  inline-size: 100%;
+  block-size: minmax(100px, 200px);
+  /* min-block-size: 150px; гарантирует минимальную высоту */
+}
+
+/*footer*/
+
+.footer {
+  padding-block-start: 286px;
+  padding-block-end: 285px;
+  text-align: center; /* если нужно центрировать */
+}
+
+.footer-title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  display: inline-block; /* или block */
+}
+
+
+/*При вёрстке старайтесь использовать логические свойства там, где это возможно. 
+Например, margin-block-start вместо margin-top или border-inline-end вместо border-right.*/
+
+/* Ниже в этом же файле вы напишете медиавыражения для адаптива под разные экраны.*/
