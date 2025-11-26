@@ -1,20 +1,28 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
-
 :root {
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  /* --bg-image-header: url(../images/cover-image-dark.png); */
-  --button-opacity-color: rgb(255,0,112, 0.4);
-  --main-text-color: #F1B2CE;
-  --title-decor-color: #000028;
-  --header-text-color: #FF0070;
-  --concentrate-title-color: #FF0070;
-  --main-font-sz: 18px;
-  --title-font-sz: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --content-title: #ff0070;
+  --title-color: #000028;
+  --accent-color: #ff0070;
+  --accent-color-opacity: #ff007066;
+  --text-color: #f1b2ce;
+  --background-image: url(../images/cover-image-dark.png);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --button-active-color: #ff0070;
+  --button-focus-color: #ff0070;
+  --background-color: #000028;
+  --header-color: #db00ff;
+
+  --main-font-size: 18px;
+  --main-font-family: "IBM Plex mono", monospace;
+  --line-height-small: 18px;
+  --line-height-medium: 23.4px;
+  --line-height-large: 82.5%;
+
+  --gap-small: 10px;
+  --gap-medium: 20px;
+
+  --inset: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+} 
+
+.theme-auto .header__rec {
+  display: none;
 }
