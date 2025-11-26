@@ -16,11 +16,14 @@
   --main-text-color: #353430;
   --title-decor-color: #353430;
   --button-opacity-color: rgba(255,141,203, 0.4);
+  
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
+
+
 
 /* .rec {
   display: none;
@@ -35,4 +38,6 @@
   --title-decor-color: #353430;
   --button-opacity-color: rgba(255,141,203, 0.4);
 }
+
+
 }
