@@ -15,15 +15,24 @@
   --bg-image: url(../images/cover-image-light.png);
   --main-text-color: #353430;
   --title-decor-color: #353430;
-  --button-opacity-color: rgba(255,141,203, 0.4);
-  
+  --button-opacity-color: rgba(50, 49, 45, 0.4);
+  --header-text-color: #353430;
+  --concentrate-title-color: #353430;
+  --bg-color: #FFF1F7;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
+.theme-light .rec {
+  display: none;
+}
 
+.theme-light .decorated-zone::before,
+.decorated-zone::after {
+  display: none;
+}
 
 /* .rec {
   display: none;
@@ -37,6 +46,9 @@
   --main-text-color: #353430;
   --title-decor-color: #353430;
   --button-opacity-color: rgba(255,141,203, 0.4);
+  --header-text-color: #353430;
+  --concentrate-title-color: #353430;
+  --bg-color: #FFF1F7;
 }
 
 

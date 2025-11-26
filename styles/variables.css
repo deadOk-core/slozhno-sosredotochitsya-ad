@@ -7,11 +7,14 @@
 :root {
   --accent-color: #FF0070;
   --title-color: #DB00FF;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   /* --bg-image-header: url(../images/cover-image-dark.png); */
   --button-opacity-color: rgb(255,0,112, 0.4);
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
+  --header-text-color: #FF0070;
+  --concentrate-title-color: #FF0070;
   --main-font-sz: 18px;
   --title-font-sz: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }

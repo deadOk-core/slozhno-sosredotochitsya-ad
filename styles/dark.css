@@ -17,6 +17,9 @@
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
   --button-opacity-color: rgb(255,0,112, 0.4);
+  --header-text-color: #FF0070;
+  --concentrate-title-color: #FF0070;
+  --bg-color: #000028;
 }
 
 .theme-dark .page {
@@ -27,4 +30,7 @@
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
   --button-opacity-color: rgb(255,0,112, 0.4);
+  --header-text-color: #FF0070;
+  --concentrate-title-color: #FF0070;
+  --bg-color: #000028;
 }
