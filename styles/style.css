@@ -1,16 +1,10 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: "IBM Plex mono", sans-serif;
   font-size: var(--main-font-sz);
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-
-
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
   background-color: var(--bg-color);
 }
 
@@ -22,10 +16,6 @@
   min-height: 100vh;
   margin-block-end: 40px;
   padding: 10px;
-  /* padding-bottom: 0;
-  padding-top: 0; */
-  /* margin-block-end: 40px; */
-  /* margin-block-end: 20px; */
 }
 
 .decorated-zone::before,
@@ -37,12 +27,16 @@
   pointer-events: none;
 }
 
+/*верхний правый угол*/
+
 .decorated-zone::before {
   inset-block-start: 10px;
   inset-inline-end: 10px;
   border-block-start: 1px solid var(--header-text-color);
   border-inline-end: 1px solid var(--header-text-color);
 }
+
+/*нижний левый угол*/
 
 .decorated-zone::after {
   inset-block-end: 10px;
@@ -55,7 +49,7 @@
   background-color: transparent;
   font-size: 18px;
   line-height: 18px;
-  text-transform: lowercase; /* преобразование в нижний регистр */
+  text-transform: lowercase;
   text-align: center;
   border: none;
   color: var(--header-text-color);
@@ -89,8 +83,6 @@
 .header__theme-menu {
   display: flex;
   justify-content: end;
-  /* color: var(--); */
-  /* margin-block-start: 65px; */
 }
 
 .header__theme-menu-list {
@@ -100,7 +92,6 @@
   justify-content: center;
   gap: 10px;
   margin-block-start: 65px;
-  /* padding-block-start: 39px; */
 }
 
 .header-text {
@@ -129,10 +120,8 @@
 }
 
 .rec {
-  /* font-size: var(--main-font-size); */
   text-transform: uppercase;
   line-height: 25px;
-  /* color: var(--color-decor); */
   inset-block-start: clamp(10px, 3vw, 20px);
   inset-inline-end: clamp(10px, 3vw, 20px);
   position: absolute;
@@ -178,7 +167,6 @@
 }
 
 .title-decor {
-  /* block-size: ; */
   background-color: var(--accent-color);
   color: var(--title-decor-color);
   font-weight: 700;
@@ -234,18 +222,23 @@
   block-size: 100%;
   object-fit: cover;
 }
+
 .picture-item:nth-child(1) {
   max-height: 142px;
 }
+
 .picture-item:nth-child(2) {
   max-height: 355px;
 }
+
 .picture-item:nth-child(3) {
   max-height: 237px;
 }
+
 .picture-item:nth-child(4) {
   max-height: 355px;
 }
+
 .picture-item:last-child {
   max-height: 237px;
 }
@@ -276,13 +269,10 @@
 
   .header {
     padding: 20px;
-    /* margin-block-end: 0; */
     min-height: 100vh;
     grid-template-rows: 1fr min-content 1fr;
     margin-block-end: 60px;
   }
-
-  
 
   .footer {
     padding: 0 20px;
@@ -304,7 +294,6 @@
   }
 
   .header-text {
-    /* display: inline-block; */
     margin-block-end: 0;
     max-inline-size: calc(50% - 30px);
     text-align: left;
@@ -324,6 +313,7 @@
     margin-block-end: 60px;
     padding: 0 20px;
   }
+
   .decline-concentrate-title {
     max-inline-size: 236px;
   }
@@ -339,7 +329,6 @@
   .section:nth-child(odd) {
     display: grid;
     grid-template-columns: minmax(235px, 1fr) 2fr;
-    /* grid-template-rows: min-content; */
     column-gap: 10px;
     row-gap: 20px;
   }
@@ -347,6 +336,7 @@
   .section-item {
     grid-column: -1;
   }
+
   .simple-tips {
     grid-column: -1;
     block-size: min-content;
@@ -396,6 +386,7 @@
     max-inline-size: 479px;
     max-block-size: 318px;
   }
+
   .picture {
     display: block;
     block-size: 100%;
@@ -411,8 +402,6 @@
 
     .header {
       margin-block-end: 60px;
-      /* margin-block-end: 40px; */
-      /* margin-block-end: 0; */
       min-height: 100vh;
       grid-template-rows: 1fr min-content 1fr;
     }
@@ -443,7 +432,6 @@
       grid-template-columns: 315px 1fr;
       grid-template-rows: min-content;
       column-gap: 10px;
-      /* row-gap: 20px; */
     }
 
     .concentrate-subtitle-item {
@@ -465,7 +453,7 @@
     .decline-concentrate {
       display: grid;
       grid-template-columns: repeat(3, minmax(315px, 1fr));
-      grid-template-rows: min-content 1fr; /* заголовок + контент */
+      grid-template-rows: min-content 1fr;
       gap: 20px;
     }
 
@@ -477,19 +465,16 @@
     }
 
     .decline-concentrate .section-item:nth-of-type(1) {
-      /* первый section-item */
       grid-column: 1;
       grid-row: 2;
     }
 
     .decline-concentrate .section-item:nth-of-type(2) {
-      /* второй section-item */
       grid-column: 2;
       grid-row: 2;
     }
 
     .decline-concentrate .section-item:nth-of-type(3) {
-      /* третий section-item */
       grid-column: 3;
       grid-row: 2;
     }
@@ -525,8 +510,3 @@
     }
   }
 }
-
-/*При вёрстке старайтесь использовать логические свойства там, где это возможно. 
-Например, margin-block-start вместо margin-top или border-inline-end вместо border-right.*/
-
-/* Ниже в этом же файле вы напишете медиавыражения для адаптива под разные экраны.*/
