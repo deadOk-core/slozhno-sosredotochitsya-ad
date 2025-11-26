@@ -11,10 +11,12 @@
   */
 
   --accent-color: #FF0070;
+  --title-color: #DB00FF;
   --bg-image: url(../images/cover-image-dark.png);
   /* --bg-image-header: url(../images/cover-image-dark.png); */
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
+  --button-opacity-color: rgb(255,0,112, 0.4);
 }
 
 .theme-dark .page {
@@ -24,4 +26,5 @@
   /* --bg-image-header: url(../images/cover-image-dark.png); */
   --main-text-color: #F1B2CE;
   --title-decor-color: #000028;
+  --button-opacity-color: rgb(255,0,112, 0.4);
 }

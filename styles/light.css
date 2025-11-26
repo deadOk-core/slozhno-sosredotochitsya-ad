@@ -11,9 +11,11 @@
   */
 
   --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --main-text-color: #353430;
   --title-decor-color: #353430;
+  --button-opacity-color: rgba(255,141,203, 0.4);
 }
 
 .theme-light .page {
@@ -27,8 +29,10 @@
 @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --main-text-color: #353430;
   --title-decor-color: #353430;
+  --button-opacity-color: rgba(255,141,203, 0.4);
 }
 }

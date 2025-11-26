@@ -17,31 +17,27 @@
   block-size: 100vh;
 }
 
-.header__theme-menu-button_active,
-.header__theme-menu-button:hover {
-  border: 1px solid rgb(255, 0, 112, 0.4);
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  pointer-events: none;
 }
 
-button:focus {
-  outline: none;
+.decorated-zone::before {
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
 }
 
-button:focus-visible {
-  outline: var(--accent-color) solid 1px;
-}
-
-.header__theme-menu-list {
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 10px;
-  margin-block-start: 65px;
-}
-
-.header__theme-menu {
-  display: flex;
-  justify-content: end;
-  /* margin-block-start: 65px; */
+.decorated-zone::after {
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button {
@@ -51,13 +47,75 @@ button:focus-visible {
   text-transform: lowercase; /* преобразование в нижний регистр */
   text-align: center;
   border: none;
-  padding-block: 1.5px;
-  padding-inline: 13px;
+  /* padding-block: 1.5px;
+  padding-inline: 13px; */
+  cursor: pointer;
+  padding: 0 13px;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: none;
+  border: 1px solid var(--button-opacity-color);
+  /* opacity: 0.4; */
+  /* color: var(--main-text-color); */
 }
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible::after {
+  content: '';
+  position: absolute;
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: var(--accent-color);
+  inset-block-end: -2px;
+  inset-inline-start: 0;
+}
+
+/* .header__theme-menu-button {
+  border: 1px solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+} */
+
+/* .header__theme-menu-button:hover {
+  border: 1px solid rgb(255, 0, 112, 0.4);
+} */
+
+/* button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: var(--accent-color) solid 1px;
+} */
+
+.header__theme-menu {
+  display: flex;
+  justify-content: end;
+  /* margin-block-start: 65px; */
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 65px;
+}
+
+
+
 
 .header-text {
   font-weight: 700;
@@ -65,6 +123,7 @@ button:focus-visible {
   max-block-size: 117px;
   align-self: center;
   justify-self: end;
+  margin-block-end: 66px;
 }
 
 .main {
@@ -117,7 +176,7 @@ button:focus-visible {
   font-size: var(--title-font-sz);
   font-weight: 700;
   line-height: 83%;
-  color: #DB00FF;
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   margin-block-start: 65px;
   margin-block-end: 55px;
@@ -183,19 +242,14 @@ button:focus-visible {
   /* grid-template-rows: repeat(6, minmax(142px, 1fr)); 5 элементов */
 }
 
-
-
-.picture-item-link {
-  inline-size: 100%;
-  block-size: 100%;
+.picture-item {
+  height: 100%;
 }
 
 .picture {
-  /* object-position: center; */
-  object-fit: cover;
   inline-size: 100%;
-  block-size: minmax(100px, 200px);
-  
+  block-size: 100%;
+  object-fit: cover;
 }
 
 /*footer*/
@@ -218,6 +272,16 @@ button:focus-visible {
 @media (width >= 768px) {
   :root {
   --title-font-sz: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.decorated-zone::before {
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+}
+
+.decorated-zone::after {
+  inset-block-end: 20px;
+  inset-inline-start: 20px;
 }
 
 .title {
