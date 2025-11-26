@@ -274,7 +274,9 @@
 
   .header {
     padding: 20px;
-    margin-block-end: 40px;
+    margin-block-end: 60px;
+    min-height: 100vh;
+    grid-template-rows: min-content min-content min-content;
   }
 
   .footer {
@@ -293,6 +295,7 @@
 
   .title {
     margin-block-start: 173px;
+    margin-block-end: 162px;
   }
 
   .header-text {
@@ -402,14 +405,14 @@
 
     .header {
       /* margin-block-end: 60px; */
-      margin-block-end: 40px;
+      /* margin-block-end: 40px; */
       grid-template-rows: min-content min-content min-content;
     }
 
     .header-text {
       max-block-size: 71px;
       max-inline-size: 491px;
-      margin-block-end: 134px;
+      margin-block-end: 183px;
     }
 
     .header__theme-menu-list {
