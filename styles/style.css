@@ -20,7 +20,7 @@
   display: grid;
   grid-template-rows: min-content min-content 1fr;
   min-height: 100vh;
-  margin-block-end: 30px;
+  margin-block-end: 40px;
   padding: 10px;
   /* margin-block-end: 40px; */
   /* margin-block-end: 20px; */
@@ -98,6 +98,7 @@
   justify-content: center;
   gap: 10px;
   margin-block-start: 65px;
+  /* padding-block-start: 39px; */
 }
 
 .header-text {
@@ -272,7 +273,7 @@
   }
 
   .header {
-    padding: 0 20px;
+    padding: 20px;
     margin-block-end: 40px;
   }
 
