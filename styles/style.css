@@ -242,7 +242,7 @@
 
 /*footer*/
 
-.footer {
+/* .footer {
   position: relative;
   display: flex;
   align-items: center;
@@ -255,10 +255,27 @@
 
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
-  display: inline-block; /* или block */
+  display: inline-block;
   margin-block-end: 0;
   margin-block-start: 0;
+} */
+
+.footer {
+  display: grid;
+  min-height: 100vh;
+  
 }
+
+.footer_title {
+  justify-self: center;
+  align-self: center;
+  color: #DB00FF;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
 
 @media (width >= 768px) {
   :root {
@@ -269,7 +286,7 @@
   padding: 20px;
 }
 
-.header{
+.header {
   margin-block-end: 40px;
 }
 
