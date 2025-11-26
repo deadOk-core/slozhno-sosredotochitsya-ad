@@ -20,7 +20,8 @@
   display: grid;
   grid-template-rows: min-content min-content 1fr;
   min-height: 100vh;
-  margin-block-end: 40px;
+  /* margin-block-end: 40px; */
+  margin-block-end: 28px;
 }
 
 .decorated-zone::before,
