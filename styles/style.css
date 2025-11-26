@@ -21,7 +21,7 @@
   grid-template-rows: min-content min-content 1fr;
   min-height: 100vh;
   margin-block-end: 30px;
-  padding: 10px;
+  padding: 0 10px;
   /* margin-block-end: 40px; */
   /* margin-block-end: 20px; */
 }
@@ -114,7 +114,7 @@
   gap: 50px;
   color: var(--main-text-color);
   margin-block-end: 40px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .concentrate-title {
@@ -253,7 +253,7 @@
   display: grid;
   min-height: 100vh;
   position: relative;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .footer_title {
@@ -272,18 +272,12 @@
   }
 
   .header {
-    padding: 20px;
-  }
-  .main {
-    padding: 20px;
+    padding: 0 20px;
+    margin-block-end: 40px;
   }
 
   .footer {
-    padding: 20px;
-  }
-
-  .header {
-    margin-block-end: 40px;
+    padding: 0 20px;
   }
 
   .decorated-zone::before {
@@ -318,6 +312,7 @@
   .main {
     gap: 80px;
     margin-block-end: 60px;
+    padding: 0 20px;
   }
   .decline-concentrate-title {
     max-inline-size: 236px;
