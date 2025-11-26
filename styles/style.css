@@ -414,7 +414,8 @@
     }
 
     .header {
-      margin-block-end: 60px;
+      /* margin-block-end: 60px; */
+      margin-block-end: 40px;
       grid-template-rows: min-content min-content min-content;
     }
 
